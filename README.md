@@ -90,13 +90,6 @@ Peer
 1. Admin Panel (React)
 2. Api (NodeJs/Express)
 
-### Installation
-```bash
-git clone https://github.com/MSSOFTPC/EbookApp/
-cd EbookApp
-npm install
-npm start
-
 🎯 Why Choose This Project?
 
 ✅ End-to-End Solution (App + Admin + Backend)
@@ -112,6 +105,14 @@ Email: contact@mssoftpc.com
 
 📄 License
 MIT © 2025
+
+### Installation
+```bash
+git clone https://github.com/MSSOFTPC/EbookApp/
+cd EbookApp
+npm install
+npm start
+
 
 
 
