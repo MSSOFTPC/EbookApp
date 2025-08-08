@@ -49,20 +49,28 @@ A feature-rich eBook reader application supporting PDF and EPUB formats with adv
 - 🎁 Free books section
 - 📧 Contact support
 - 💌 Invitation popups
+- Payment QR Manual
 
 ### 🎁 Share & Earn Program
 - 🔗 Share with personalized links/promo codes
 - 🎉 1 month free for successful referrals
 - 💸 Reward system for both referrer and referee
 
+### 💳 Payment Method
+- 📷 Custom Payment Proof — User will upload a screenshot of payment
+- ✅ Admin Verification — Admin can verify and approve manually via Admin Panel
+- 🔐 This allows flexible offline payments or external gateway verification if automatic payment integration is not used.
+
 ## 🛠️ Technology Stack
-- Frontend: React Native/Flutter (cross-platform)
+- Frontend: React Native (cross-platform)
 - Backend: Node.js with Express
-- Database: MongoDB/Firebase
-- Storage: AWS S3/Google Cloud Storage
-- Authentication: Firebase Auth/OAuth
-- EPUB Processing: Epub.js or similar library
-- PDF Processing: PDF.js or similar library
+- Database: MongoDB
+- Storage: AWS S3/Google Cloud Storage / Local
+- Authentication: OAuth
+- EPUB Processing: @epubjs-react-native/core
+- PDF Processing: react-native-pdf
+- Session: Redux, Redux-persist
+- Core: Expo Bare
 
 ## 📱 Screenshots
 <!-- Add actual screenshots here -->
@@ -74,13 +82,36 @@ A feature-rich eBook reader application supporting PDF and EPUB formats with adv
 
 ### Prerequisites
 - Node.js v14+
-- npm/yarn
-- React Native/Flutter environment setup
-- Android Studio/Xcode for mobile builds
+- npm/bun
+- React Native 0.79.5
+- Expo Bare
+
+Peer 
+1. Admin Panel (React)
+2. Api (NodeJs/Express)
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/ebook-reader.git
-cd ebook-reader
+git clone https://github.com/MSSOFTPC/EbookApp/
+cd EbookApp
 npm install
 npm start
+
+🎯 Why Choose This Project?
+
+✅ End-to-End Solution (App + Admin + Backend)
+✅ Scalable CMS for publishers/authors
+✅ Monetization Ready (Subscriptions, Ads, Referrals)
+✅ Active Maintenance with dedicated support
+
+📞 Support & Contact
+
+Phone: +91 8899191620
+Website: https://mssoftpc.com
+Email: contact@mssoftpc.com
+
+📄 License
+MIT © 2025
+
+
+
