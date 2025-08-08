@@ -83,10 +83,10 @@ const Membership = React.forwardRef((props, ref) => {
             </View>
 
             <View style={styles.plansWrapper}>
-              <TouchableOpacity activeOpacity={0.8} style={[styles.planCard, styles.gradient6]} onPress={() => {setQRSubmitScreen(true); setSelected({price,type:"sixmonth",duration:180})}}>
+              <TouchableOpacity activeOpacity={0.8} style={[styles.planCard, styles.gradient6]} onPress={() => {setQRSubmitScreen(true); setSelected({price,type:"sixmonth",duration:274})}}>
                 <FontAwesome5 name="fire" size={22} color="white" />
                 <View>
-                  <Text style={styles.planTitle}>6 Months</Text>
+                  <Text style={styles.planTitle}>9 Months</Text>
                   <Text style={styles.planSubtitle}>₹{settings?.Membership?.SixMonth} - Save {Math.ceil(discountSixPercentage)}%</Text>
                 </View>
               </TouchableOpacity>

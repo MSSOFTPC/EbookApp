@@ -13,7 +13,7 @@ const GoogleLoginBtn = () => {
   useEffect(() => {
     GoogleSignin.configure({
       scopes: ['https://www.googleapis.com/auth/userinfo.email'],
-      webClientId: '218939342013-obkgepolf8kk6jr17n9nfbh5ja47g8v0.apps.googleusercontent.com',
+      webClientId: '235336836186-muh26npvrf376rrcvtol7d2vpgmhevvd.apps.googleusercontent.com',
       offlineAccess:true,
       forceCodeForRefreshToken:true
     });
@@ -40,9 +40,14 @@ const GoogleLoginBtn = () => {
             ToastSuccess("Login Success");
           },
           onFailed:(err)=>{
+            console.log("login failed",err.toString())
             ToastError(err)
           },
-          onFinally: () => dispatch(isloading(false)),
+          onFinally: () => {
+          dispatch(isloading(false));
+          setloading(false)  
+          }
+            ,
         });
       } else {
         dispatch(isloading(false));

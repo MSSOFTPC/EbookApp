@@ -37,7 +37,13 @@ const AboutMembershipBtn = () => {
             membershipref.current?.present()
             return
           }
-          navigate("BookReader", { item })
+
+          // Agar pdf ho
+          if(item?.media?.toLowerCase()?.endsWith('.pdf')){
+            navigate("BookReaderPdf", { item })
+          }else{
+            navigate("BookReader", { item })
+          }
         }}
       >
 

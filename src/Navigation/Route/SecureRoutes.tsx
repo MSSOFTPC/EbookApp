@@ -16,6 +16,8 @@ import Discovery from '@/Screens/Secured/Discovery/Discovery'
 import InvitationScreen from '@/Screens/Secured/YourProfile/YourProfileInvitationForm'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/Redux/Store'
+import Notification from '@/Screens/Secured/Notification/Notification'
+import BookReaderPdf from '@/Screens/Secured/BookReaderPdf/BookReaderPdf'
 
 const SecureRoutes = () => {
      const Stack:any = createNativeStackNavigator()
@@ -84,9 +86,19 @@ const SecureRoutes = () => {
             component={BookReader}
             options={{headerShown: false}}
          />
+           <Stack.Screen
+            name="BookReaderPdf"
+            component={BookReaderPdf}
+            options={{headerShown: false}}
+         />
             <Stack.Screen
             name="InvitationScreen"
             component={InvitationScreen}
+            options={{headerShown: false}}
+         />
+            <Stack.Screen
+            name="Notification"
+            component={Notification}
             options={{headerShown: false}}
          />
    </Stack.Navigator>

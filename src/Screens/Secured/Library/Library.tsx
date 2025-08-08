@@ -17,7 +17,7 @@ const Library = () => {
       <View style={{padding:20}}>
             <FlatList
                 showsVerticalScrollIndicator={false}
-                data={[]}
+                data={readingData}
                 renderItem={({item,index})=><ProductsListLayoutSingle item={item[1]?.bookdata}/>}
                 keyExtractor={(k)=>k[1].bookdata?._id}
                 contentContainerStyle={{gap:15,paddingBottom:100}}

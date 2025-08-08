@@ -2,9 +2,9 @@ import Axios from "axios";
 
 
 // http://192.168.29.30:3000/api/           // Development
-// http://128.140.53.26:4000/api/           // Production
+// https://api.thelpr.in          // Production
 const BaseApi = Axios.create({
-    baseURL: "http://192.168.29.30:3000/api/",
+    baseURL: "https://api.thelpr.in/api/",
     timeout:5000,
     headers: {
         "Cache-Control": "no-cache, no-store, must-revalidate",

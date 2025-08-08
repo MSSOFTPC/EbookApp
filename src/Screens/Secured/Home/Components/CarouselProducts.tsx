@@ -20,9 +20,10 @@ const GridProducts = ({books=[],loading}) => {
     return <ActivityIndicator size={"large"} color={"black"}/>;
   }
 
+
   const renderItems = ({ item, index }) => {
     const findBook = bookmarks?.find((i) => i._id === item?._id);
-    let currentBookReadData = Object.entries(bookAdvancedSettings)?.find(([key]) => key === item._id);
+    let currentBookReadData = Object.entries(bookAdvancedSettings)?.find(([key]) => key === item?._id);
     const currentPage = currentBookReadData?.[1]?.meta?.currentPage;
     const totalPage = currentBookReadData?.[1]?.meta?.totalPage;
     const percentage = (currentPage / totalPage) || 0;
@@ -31,10 +32,13 @@ const GridProducts = ({books=[],loading}) => {
       dispatch(updateBookmarks(item));
     };
 
+
+
+
     return (
       <TouchableOpacity style={Styles.item} onPress={()=>navigate("book",{item})}>
         <View style={Styles.imgWrapper}>
-          <ImageLoader source={item.primaryImage} style={Styles.img} />
+          <ImageLoader source={item?.primaryImage} style={Styles.img} />
            <TouchableOpacity style={Styles.bookmark} onPress={handleBookmarks}>
             {!findBook?._id ? (
               <FontAwesome5 name="bookmark" size={18} color="#f93f0a" />
@@ -89,7 +93,7 @@ const GridProducts = ({books=[],loading}) => {
       <FlatList
         data={books}
         renderItem={renderItems}
-        keyExtractor={({ _id }) => _id.toString()}
+        keyExtractor={(item) => item?._id.toString()}
         horizontal
         showsHorizontalScrollIndicator={false}
         snapToInterval={ITEM_WIDTH + 20}  // 20 is the gap/margin

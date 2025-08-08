@@ -13,6 +13,7 @@ const ContinueReading = () => {
   const {bookAdvancedSettings} = useSelector((i:RootState)=>i.AuthSlice)
   let readingData = Object.entries(bookAdvancedSettings);
   const [books,setbooks] = useState([])
+  const {navigate} = useNavigation()
 
   useEffect(()=>{
     setTimeout(() => {

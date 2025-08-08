@@ -16,7 +16,7 @@ const Invite = () => {
 const handleShare = async () => {
   try {
     const result = await Share.share({
-      message: `Hey! Check out this amazing app. Download now and use my referral code ${share?.playStore} to get benefits!\n\nDownload Link: https://yourapp.com`,
+            message: `Hey! Check out this amazing app. Download now and use my referral code ${user?.referralCode} to get benefits!\n\nDownload Link: ${share?.playStore}`,
     });
 
     if (result.action === Share.sharedAction) {

@@ -44,7 +44,7 @@ const HomeHeader = () => {
           <Entypo name="magnifying-glass" size={20} color="#767676" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.searchBtn} onPress={() => navigate("BookReader")}>
+        <TouchableOpacity style={Styles.searchBtn} onPress={() => navigate("Notification")}>
           <Feather name="bell" size={20} color="#767676" />
         </TouchableOpacity>
       </View>

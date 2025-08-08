@@ -13,10 +13,11 @@ interface topBar {
     hideShare?:boolean,
     hideBookmark?:boolean
     item?:object
-    showDownload?:boolean
+    showDownload?:boolean,
+    style?:string
 }
 
-const TopBar = ({title,hideShare,hideBookmark,item,showDownload}:topBar) => {
+const TopBar = ({title,hideShare,hideBookmark,item,showDownload,style}:topBar) => {
     const {goBack} = useNavigation()
      const {settings,user,bookmarks} = useSelector((i:RootState)=>i.AuthSlice)
     const {share} = settings
@@ -25,7 +26,7 @@ const TopBar = ({title,hideShare,hideBookmark,item,showDownload}:topBar) => {
     const handleShare = async () => {
         try {
           const result = await Share.share({
-            message: `Hey! Check out this amazing app. Download now and use my referral code ${share?.playStore} to get benefits!\n\nDownload Link: https://yourapp.com`,
+            message: `Hey! Check out this amazing app. Download now and use my referral code ${user?.referralCode} to get benefits!\n\nDownload Link: ${share?.playStore}`,
           });
       
           if (result.action === Share.sharedAction) {
@@ -72,7 +73,7 @@ const TopBar = ({title,hideShare,hideBookmark,item,showDownload}:topBar) => {
 };
 
   return (
-    <View style={Styles.wrapper}>
+    <View style={[Styles.wrapper,style]}>
          <View style={Styles.IconWrapper}>
             <TouchableOpacity style={Styles.searchbtn} onPress={()=>goBack()}>
                 <AntDesign name="arrowleft" size={20} color="#767676" />
