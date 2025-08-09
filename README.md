@@ -49,7 +49,7 @@ A feature-rich eBook reader application supporting PDF and EPUB formats with adv
 - 🎁 Free books section
 - 📧 Contact support
 - 💌 Invitation popups
-- 🔒 Screenshot Blocked
+- 👁️‍🗨️ Screenshot Blocked
 - Payment QR Manual
 
 ### 🎁 Share & Earn Program
