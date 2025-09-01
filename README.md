@@ -75,11 +75,11 @@ A feature-rich eBook reader application supporting PDF and EPUB formats with adv
 
 ## 📱 Screenshots
 
-![Home Screen](https://i.ibb.co/Vb0bPTZ)
-![Reading View](https://i.ibb.co/FqWfzfTX)
-![Dark Mode](https://i.ibb.co/C555CFXj)
-![Library Screen](https://i.ibb.co/9xQYWzL)
-![Settings Screen](https://i.ibb.co/5WpMFDSd)
+![Home Screen](https://i.ibb.co/4CwC5pG/unnamed-5.png)
+![Reading View](https://i.ibb.co/4CwC5pG/unnamed-6.png)
+![Dark Mode](https://i.ibb.co/4CwC5pG/unnamed-7.png)
+![Library Screen](https://i.ibb.co/4CwC5pG/unnamed-8.png)
+![Settings Screen](https://i.ibb.co/4CwC5pG/unnamed-9.png)
 
 ## 🚀 Getting Started
 
