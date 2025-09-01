@@ -4,7 +4,7 @@
 
 A feature-rich eBook reader application supporting PDF and EPUB formats with advanced reading tools, social features, and personalized reading experience.
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-green?style=for-the-badge&logo=vercel)](https://yourappdemo.com) <!-- Replace with actual demo link -->
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Preview-green?style=for-the-badge&logo=vercel)]([https://yourappdemo.com](https://play.google.com/store/apps/details?id=com.adrielvaidya.ebook)) <!-- Replace with actual demo link -->
 
 ## ✨ Key Features
 
